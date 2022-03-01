@@ -11,7 +11,7 @@ namespace gatorMoisture {
     /**
     * Reads the number
     */
-    //% weight=30 blockId="gatorMoisture_moisture" block="Get moisture on pin %pin | in %gatorMoistureType"
+    //% weight=30 blockId="gatorMoisture_moisture" block="Get moisture on pin %pin | in %gatorMoistureType using power pin %pin"
     export function moisture(pin: AnalogPin, type: gatorMoistureType): number {
         let ADCVal = pins.analogReadPin(pin)
         switch (type) {
